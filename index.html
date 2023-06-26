@@ -6,22 +6,162 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https:/https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   <style>
- 
-  #background-containerimg {
-  background-image: url('img2.jpg');
-  background-size: cover;
-  filter: blur(5px); 
+    body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("img2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(5px); /* Adjust the blur value as needed */
+    z-index: -1;
+  }
+  .custom-bg-color {
+    background-color: #ffffff; /* HEX color */
+    
+    
+  }
+  .custom-bg-color-navbar {
+    background-color: #15d58a; /* HEX color */
+    
+    
+  }
+  .centered-image {
+    max-width: 8%;
+    max-height: 8%;
+  }
+  h2 {
+  font-family: 'Poppins',sans-serif;
+  }
+  .custom-translucent-bg {
+  background-color: rgba(21, 213, 138, 0.2); /* Change the opacity value (0.7) as needed */
+  border-radius: 10px; /* Adjust the border-radius value as desired */
 }
 
+.custom-rounded-padding {
+  padding: 10px; /* Adjust the padding value as desired */
+}
+.custom-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  .footer-title {
+  color: #15d58a; /* Replace with your desired color */
+}
+.footer-image {
+  max-width: 30px; /* Replace with your desired maximum width */
+  max-height: 30px; /* Replace with your desired maximum height */
+}
+  
   </style>
 </head>
 <body>
-    <div class="container-fluid" id="background-containerimg">
-        
+
+<div class="p-4 custom-bg-color text-white text-center">
+  
+  <!-- <h1>VoyCar</h1> -->
+  <img src="img9.png" alt="logopic" class="centered-image">
+  <!-- <p>Resize this responsive page to see the effect!</p>  -->
+
+</div>
+
+<!-- <nav class="navbar navbar-expand-sm custom-bg-color-navbar">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+  </div>
+</nav> -->
+
+<div class="container mt-5">
+  <!-- <div class="row">
+    <div class="col-sm-4">
+      <h2>About Me</h2>
+      <h5>Photo of me:</h5>
+      <div img src="img2.jpg"  alt="Cinque Terre">
       </div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+      <h3 class="mt-4">Some Links</h3>
+      <p>Lorem ipsum dolor sit ame.</p>
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+      <hr class="d-sm-none">
+    </div> -->
+    <div class="col-sm+3 custom-translucent-bg custom-rounded-padding">
+      <h2>Comparte, cobra y disfruta de la libertad con VoyCar</h2>
+      <h5>Libere el potencial de su coche</h5>
+      
+      <p>Con VoyCar, puede convertir su coche en una fuente de ingresos y aventuras. Experimente la alegría de compartir, los beneficios financieros y las posibilidades ilimitadas. No te pierdas esta oportunidad que cambiará tu vida.</p>
+        <h5>¡Suscríbase a nuestro boletín hoy para obtener acceso anticipado exclusivo y empeiza a vivir la vida como quieres tu con VoyCar!</h5>
+
+        <form action="https://example.com/">
+          <div class="row">
+            <div class="col">
+              
+            <input type="text" class="form-control" id="name" placeholder="Nombre" name="Nombre" required>
+            </div>
+            <div class="col">
+              
+            <input type="email" class="form-control" id="email" placeholder="Correo electronico" name="email" required>
+            </div>
+          </div>
+          <div class="form-check mb-3">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" name="TC" required> Acepto recibir el boletín de VoyCar y acepto los <a href="https://example.com/">terminos y condiciones</a> correspondientes.
+            </label>
+          </div>
+          
+          <button type="submit" class="btn btn-outline-success">Me apunto!</button>
+        </form>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="mt-5 p-5 custom-bg-color text-white text-center custom-footer"> -->
+  
+<!-- </div> -->
+<footer class="mt-5 p-3 custom-bg-color text-white text-center custom-footer ">
+  <h3 class="footer-title">Siguenos en las redes!</h3>
+  <div class="d-flex justify-content-center social-media-icons">
+    <a href="https://www.flinkedin.com"><img src="linkedinlogo.png" alt="Facebook" class="footer-image"></a>
+    <a href="https://www.twitter.com"><img src="twitterlogo.png" alt="Twitter" class="footer-image"></a>
+    <a href="https://www.facebook.com"><img src="fblogo.png" alt="Instagram" class="footer-image"></a>
+  </div>
+  
 
 
+  
+</footer>
 
 </body>
 </html>
