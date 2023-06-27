@@ -47,8 +47,8 @@
   padding: 10px; /* Adjust the padding value as desired */
 }
 .custom-footer {
-    position: absolute;
-    padding: 15px;
+    position: fixed;
+    /* padding: 15px; */
     left: 0;
     bottom: 0;
     width: 100%;
@@ -60,6 +60,10 @@
   max-width: 30px; /* Replace with your desired maximum width */
   max-height: 30px; /* Replace with your desired maximum height */
 }
+.scrollable-container {
+      max-height: calc(100vh - 200px); /* Adjust the max-height value as needed */
+      overflow-y: auto;
+    }
   
   </style>
 </head>
@@ -118,7 +122,7 @@
       </ul>
       <hr class="d-sm-none">
     </div> -->
-    <div class="col-sm+3 custom-translucent-bg custom-rounded-padding">
+    <div class="col-sm+3 custom-translucent-bg custom-rounded-padding scrollable-content">
       <h2>Comparte, cobra y disfruta de la libertad con VoyCar</h2>
       <h5>Libere el potencial de su coche</h5>
       
