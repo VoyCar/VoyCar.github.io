@@ -36,6 +36,11 @@
     max-width: 8%;
     max-height: 8%;
   }
+  @media (max-width: 576px) {
+  .centered-image {
+    max-width: 200px; /* Adjust the size as needed */
+  }
+}
   h2 {
   font-family: 'Poppins',sans-serif;
   }
@@ -64,6 +69,7 @@
   max-width: 30px; /* Replace with your desired maximum width */
   max-height: 30px; /* Replace with your desired maximum height */
 }
+
 .scrollable-container {
       max-height: calc(100vh - 200px); /* Adjust the max-height value as needed */
       overflow-y: auto;
@@ -129,29 +135,59 @@
               <input class="form-check-input" type="checkbox" name="TC" required> Acepto recibir el boletín de VoyCar y acepto los <a href="https://example.com/" class="text-white">términos y condiciones</a> correspondientes.
             </label>
           </div>
-          <button type="submit" class="btn btn-outline-success">Me apunto!</button>
+          <button type="submit" class="btn btn-outline-light">Me apunto!</button>
         </div>
       </form>
     </div>
   </div>
-
+  <div class="row mt-5 justify-content-center">
+    <div class="col-sm-12 text-center">
+      <h2 class="text-white">¿Cómo funciona?</h2>
+    </div>
+    <div class="col-sm-6">
+      <div class="px-4">
+        <h2 class="text-white">Anfitriones</h2>
+        <h5 class="text-white">Gana dinero alquilando tu coche, de manera facil y segura mediante nuestra app!</h5>
+      
+        
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="px-4">
+        <h2 class="text-white">renters</h2>
+        <h5 class="text-white">Alquila coches, de manera rapida y segura, con los precios mas bajos del mercado!</h5>
+      
+        
+        
+      </div>
+    </div>
+  </div>
+  <div class="row mt-5 justify-content-center">
+    <div class="col-sm-12 text-center">
+      <h2 class="text-white">Nuestro equipo</h2>
+    </div>
+  </div>
   <div class="row mt-5 justify-content-center">
     <!-- Bottom Row: Cards -->
-    <div class="col-sm-4 text-center">
-      <div class="card" style="width:300px">
-        <img class="card-img-top" src="img_avatar5.png" alt="Card image">
-        <div class="card-body">
-          <h4 class="card-title card-text-custom">John Doe</h4>
-          <p class="card-text card-text-custom">Co-Founder & CEO.</p>
+    <div class="col-sm-6 text-center justify-content-center">
+      <div class="d-flex justify-content-center">
+        <div class="card" style="width:300px">
+          <img class="card-img-top" src="img_avatar5.png" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title card-text-custom">John Doe</h4>
+            <p class="card-text card-text-custom">Co-Founder & CEO.</p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col-sm-4 text-center">
-      <div class="card" style="width:300px">
-        <img class="card-img-top" src="img_avatar5.png" alt="Card image">
-        <div class="card-body">
-          <h4 class="card-title card-text-custom">Jane Smith</h4>
-          <p class="card-text card-text-custom">Co-Founder & CTO.</p>
+    <div class="col-sm-6 text-center justify-content-center">
+      <div class="d-flex justify-content-center">
+        <div class="card" style="width:300px">
+          <img class="card-img-top" src="img_avatar5.png" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title card-text-custom">Jane smith</h4>
+            <p class="card-text card-text-custom">Co-Founder & CTO.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -166,7 +202,7 @@
 <footer class="mt-5 p-3 custom-bg-color text-white text-center custom-footer ">
   <h3 class="footer-title">Siguenos en las redes!</h3>
   <div class="d-flex justify-content-center social-media-icons">
-    <a href="https://www.flinkedin.com"><img src="linkedinlogo.png" alt="Facebook" class="footer-image"></a>
+    <a href="https://www.linkedin.com/company/voycar/"><img src="linkedinlogo.png" alt="Facebook" class="footer-image"></a>
     <a href="https://www.twitter.com"><img src="twitterlogo.png" alt="Twitter" class="footer-image"></a>
     <a href="https://www.facebook.com"><img src="fblogo.png" alt="Instagram" class="footer-image"></a>
   </div>
